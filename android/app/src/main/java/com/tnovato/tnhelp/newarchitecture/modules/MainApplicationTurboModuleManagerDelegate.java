@@ -1,4 +1,4 @@
-package com.tnhelp.newarchitecture.modules;
+package com.tnovato.tnhelp.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

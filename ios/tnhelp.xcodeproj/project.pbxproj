@@ -14,6 +14,8 @@
 		96905EF65AED1B983A6B3ABC /* libPods-tnhelp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-tnhelp.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		094E9C0C51DF49FDA3202BE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B79B60D3F44BE9C70AFFD /* GoogleService-Info.plist */; };
+		27C3CFA0DD774DD383209A1E /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC56A3C6A98A47E7AE348405 /* noop-file.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,9 @@
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-tnhelp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		6F9B79B60D3F44BE9C70AFFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; name = "GoogleService-Info.plist"; path = "tnhelp/GoogleService-Info.plist"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.plist.xml; explicitFileType = undefined; includeInIndex = 0; };
+		BC56A3C6A98A47E7AE348405 /* noop-file.swift */ = {isa = PBXFileReference; name = "noop-file.swift"; path = "tnhelp/noop-file.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		0780DB09746C4894B1FA0E83 /* tnhelp-Bridging-Header.h */ = {isa = PBXFileReference; name = "tnhelp-Bridging-Header.h"; path = "tnhelp/tnhelp-Bridging-Header.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
+				6F9B79B60D3F44BE9C70AFFD /* GoogleService-Info.plist */,
+				BC56A3C6A98A47E7AE348405 /* noop-file.swift */,
+				0780DB09746C4894B1FA0E83 /* tnhelp-Bridging-Header.h */,
 			);
 			name = tnhelp;
 			sourceTree = "<group>";
@@ -196,6 +204,8 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+				094E9C0C51DF49FDA3202BE4 /* GoogleService-Info.plist in Resources */,
+				096FED0C563146B88EC86CF6 /* tnhelp-Bridging-Header.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +299,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
+				27C3CFA0DD774DD383209A1E /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,10 +327,13 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tnovato.tnhelp";
-				PRODUCT_NAME = tnhelp;
+				PRODUCT_NAME = "tnhelp";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+				TARGETED_DEVICE_FAMILY = "1";
+				SWIFT_OBJC_BRIDGING_HEADER = tnhelp/tnhelp-Bridging-Header.h;
+				CODE_SIGN_ENTITLEMENTS = "tnhelp/tnhelp.entitlements";
 			};
 			name = Debug;
 		};
@@ -339,9 +353,12 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tnovato.tnhelp";
-				PRODUCT_NAME = tnhelp;
+				PRODUCT_NAME = "tnhelp";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+				TARGETED_DEVICE_FAMILY = "1";
+				SWIFT_OBJC_BRIDGING_HEADER = tnhelp/tnhelp-Bridging-Header.h;
+				CODE_SIGN_ENTITLEMENTS = "tnhelp/tnhelp.entitlements";
 			};
 			name = Release;
 		};
@@ -398,6 +415,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				CODE_SIGN_ENTITLEMENTS = "tnhelp/tnhelp.entitlements";
 			};
 			name = Debug;
 		};
@@ -447,6 +465,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				CODE_SIGN_ENTITLEMENTS = "tnhelp/tnhelp.entitlements";
 			};
 			name = Release;
 		};

@@ -1,4 +1,4 @@
-package com.tnhelp;
+package com.tnovato.tnhelp;
 
 import android.os.Build;
 import android.os.Bundle;

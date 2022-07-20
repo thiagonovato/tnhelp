@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "929905871119",
+    "project_id": "tnhelp-e0ef9",
+    "storage_bucket": "tnhelp-e0ef9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929905871119:android:8d8789a73b1786a915967a",
+        "android_client_info": {
+          "package_name": "com.tnovato.tnhelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929905871119-qor3n23j6uubel1mr9k0crogu4ikm4rv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIgEetcWp18nd41lAsLFfej8_3j8kHKt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929905871119-qor3n23j6uubel1mr9k0crogu4ikm4rv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "929905871119-20r0fqa4311id8heq57k6gp0nr8qq5to.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tnovato.tnhelp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

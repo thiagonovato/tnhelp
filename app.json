@@ -5,6 +5,15 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "plugins": [
+      "@react-native-firebase/app"
+    ],
+    "android": {
+      "package": "com.tnovato.tnhelp"
+    },
+    "ios": {
+      "bundleIdentifier": "com.tnovato.tnhelp"
+    }
   }
 }

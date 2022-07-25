@@ -52,6 +52,7 @@ export function Home() {
     const subscribe = firestore()
       .collection('orders')
       .where('status', '==', statusSelected)
+      .where('owner', '==', auth().currentUser.uid)
       .onSnapshot((snap) => {
         const data = snap.docs.map((doc) => {
           const { patrimony, description, status, created_at } = doc.data();

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import firestore from '@react-native-firebase/firestore';
+import auth from '@react-native-firebase/auth';
 import { VStack } from 'native-base';
 import { Alert } from 'react-native';
 import { Button } from '../components/Button';
@@ -26,6 +27,7 @@ export function Register() {
         description,
         status: 'open',
         created_at: firestore.FieldValue.serverTimestamp(),
+        owner: auth().currentUser.uid,
       })
       .then(() => {
         setIsLoading(false);
